@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import NavLink from "./NavLink";
 
 export default function Header() {
   return (
@@ -9,14 +10,11 @@ export default function Header() {
       </div>
       <nav>
         <ul>
-          <li className="hover:underline">
-            <Link href="/">Home</Link>
+          <li>
+            <NavLink href="/news" >News</NavLink>
           </li>
-          <li className="hover:underline">
-            <Link href="/news">News</Link>
-          </li>
-          <li className="hover:underline">
-            <Link href="/archive">Archive</Link>
+          <li>
+            <NavLink href="/archive" >Archive</NavLink>
           </li>
         </ul>
       </nav>

@@ -4,7 +4,6 @@ type Props = {
   error: { message: string };
 };
 export default function FilterError({ error }: Props) {
-  // console.log(error);
 
   return (
     <div id="error">
