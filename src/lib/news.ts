@@ -31,7 +31,7 @@ export function getAvailableNewsMonths(year: number) {
   }, []).sort((a, b) => b - a);
 }
 
-export function getNewsForYear(year: string) {
+export function getNewsForYear(year: number) {
   return DUMMY_NEWS.filter(
     (news) => new Date(news.date).getFullYear() === +year
   );

@@ -1,4 +1,5 @@
 import { DUMMY_NEWS } from "@/dummy-news";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import React from "react";
 
@@ -14,7 +15,7 @@ export default function NewsDetailsPage({ params }: Props) {
   return (
     <article className="news-article">
       <header>
-        <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+        <Image width={250} height={150} src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
         <h1>{newsItem.title}</h1>
         <time dateTime={newsItem.date}>{newsItem.date}</time>
       </header>
