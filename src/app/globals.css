@@ -73,6 +73,7 @@ ul {
   width: 8rem;
   border-radius: 50%;
   box-shadow: 0 0 10px 0 #181817;
+  margin: 0 auto;
 }
 
 #home h1 {
